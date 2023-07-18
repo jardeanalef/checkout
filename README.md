@@ -1,4 +1,4 @@
-# checkout-viagem
+# CHECKOUT VIAGEM
 
 # Executando o projeto localmente no XAMPP
 
