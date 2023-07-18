@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/13b0caff71.js" crossorigin="anonymous"></script>
+    
+    <title>Checkout de Viagem</title>
+
+</head>
+
+<body>
+    <header> <!-- Conteúdo do cabeçalho -->
+        <div class="container">
+
+            <div class="logo"> <!-- Logo -->
+                <img src="img/LOGO2.png" alt="logo principal"> 
+            </div>
+
+            <div class="menu"> <!-- Menu -->
+
+                <nav>
+                    <a href="#">HOME</a>
+                    <a href="#">PASSAGENS</a>
+                    <a href="#">DESTINOS</a>
+                </nav>
+
+            </div>
+
+            <button onclick="animarMenu()" onclick="animar()"id="btn-menu">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
+
+            <div class="menu-mobile" id="menu-mobile"> <!--menu-mobile-->
+
+                <nav>
+                    <a href="#">HOME</a>
+                    <a href="#">PASSAGENS</a>
+                    <a href="#">DESTINOS</a>
+                </nav>
+
+            </div>
+
+            <div class="sociais">
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-facebook"></i></button>
+                <button><i class="fa-brands fa-twitter"></i></button>
+            </div>  
+
+        </div><!--container-->
+        
+    </header>
+
+    <main> <!-- Conteúdo principal do site -->
+
+    <div class="container-formulario"> 
+        <div class="formulario">
+
+            <div class="titulo">
+                <h3>Seja bem-vindo a TRAVEL WORLD. 
+                    <br>Sua viagem começa aqui.</h3>
+            </div>
+            <form id="checkout-form">
+            
+            <label for="departure-date">Data de ida:</label>
+            <input type="date" id="departure-date" required>
+    
+            <label for="return-date">Data de volta:</label>
+            <input type="date" id="return-date" required>
+    
+            <label for="adult-count">Passageiros adultos:</label>
+            <input type="number" id="adult-count" min="1" required>
+            
+            <label for="child-count">Passageiros crianças:</label>
+            <input type="number" id="child-count" min="0" required>
+            <br>
+            <label for="name">Nome do passageiro principal:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">E-mail do passageiro principal:</label>
+            <input type="email" id="email" required>
+            
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" required>
+            
+            <button class="btn-confirmar" type="submit">Confirmar</button>
+        </form>
+        </div>
+            <div id="imagem-principal">
+                <img src="img/7716587.png" width="100%" alt="imagem-principal">
+            </div>
+        </div> 
+
+    </main>
+
+    <footer> <!-- Conteúdo do rodapé -->
+        <p>&copy; 2023 Nome da Empresa. Todos os direitos reservados.</p>
+      </footer>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
+        integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
